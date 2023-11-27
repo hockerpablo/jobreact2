@@ -10,7 +10,7 @@ margin-bottom: 3rem;
 border-radius: 025px;
 font-family: 'Playpen Sans';
 font-size: 20px;
-color: var(--white-bg);
+color: var(--black-grow);
 img{
     width: 200px;
     height: auto;

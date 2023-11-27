@@ -85,9 +85,12 @@ export const LinksContainer = styled.div`
     gap: 20px;
   }
   @media (max-width:768px){
+        
+        
     .active {
-         font-size: 30px;
-         width: 300px;
+        
+         font-size: 40px;
+         width: 100%;
          display: block;
          text-align: center;
          z-index: 99;
@@ -103,9 +106,10 @@ export const HomeContainer = styled(LinksContainer)`
   
   @media (max-width: 768px) {
     display: none;
-    backdrop-filter: blur(15px);
+  
+    backdrop-filter: blur(50px);
       border-radius: 25px;
-      position: absolute;
+      position: fixed;
       margin-left: auto;
       margin-right: auto;
       top: 30%;

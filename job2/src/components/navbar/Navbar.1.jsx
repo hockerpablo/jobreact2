@@ -4,6 +4,7 @@ import icono from '../../assets/img/banana.png';
 import { FaBars } from 'react-icons/fa6';
 import { HomeContainer, LinksContainer, Logo, NavbarContainer } from './styles';
 import AuthContext from '../../context/AuthContext';
+import { MenuBurguer } from '../togglebar/ToggleMenu';
 
 
 
@@ -12,7 +13,7 @@ import AuthContext from '../../context/AuthContext';
 
 export const Navbar = () => {
 
-  
+  const {menu, toggleMenu} =useContext (MenuBurguer)
 
   const navigate = useNavigate();
 
@@ -31,21 +32,21 @@ export const Navbar = () => {
       </div>
 
       <LinksContainer>
-        <HomeContainer className='active'>
+        <HomeContainer className={menu ? 'active' : ''}>
 
           <div>
             
-            <NavLink to='/' style={({ isActive }) => ({ color: isActive ? '#A75151' : '#f3f3f3' })}>Home</NavLink>
+            <NavLink to='/' style={({ isActive }) => ({ color: isActive ? '#A75151' : 'black' })}>Home</NavLink>
           </div>
           <div>
             
-            <NavLink to={isAuth ? `/ususario/${user}` : 'Login'} style={({ isActive }) => ({ color: isActive ? '#A75151' : '#f3f3f3' })}>
+            <NavLink to={isAuth ? `/ususario/${user}` : 'Login'} style={({ isActive }) => ({ color: isActive ? '#A75151' : 'black' })}>
               {isAuth ? 'perfil' : 'Login'}
             </NavLink>
           </div>
           <div>
             
-            <NavLink to='/products' style={({ isActive }) => ({ color: isActive ? '#A75151' : '#f3f3f3' })}>Productos</NavLink>
+            <NavLink to='/products' style={({ isActive }) => ({ color: isActive ? '#A75151' : 'black' })}>Productos</NavLink>
           </div>
           <div>
             
@@ -53,13 +54,13 @@ export const Navbar = () => {
           </div>
           <div>
             
-            <NavLink to='/aboutUs' style={({ isActive }) => ({ color: isActive ? '#A75151' : '#f3f3f3' })}>Nosotros</NavLink>
+            <NavLink to='/aboutUs' style={({ isActive }) => ({ color: isActive ? '#A75151' : 'black' })}>Nosotros</NavLink>
           </div>
 
         </HomeContainer>
       </LinksContainer>
 
-      <FaBars/>
+      <FaBars onClick={toggleMenu}/>
 
     </NavbarContainer>
 

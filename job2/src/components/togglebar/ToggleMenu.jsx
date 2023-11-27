@@ -2,19 +2,19 @@ import React from 'react'
 import { useState, createContext } from 'react'
 
 
-export const MenuHamburguesa = createContext()
+export const MenuBurguer = createContext()
 
-export const HamburguesaMenu = ({ children })=>{
+export const BurguerMenu = ({ children })=>{
     
    const [menu, setMenu] =useState(false)
 
-   const ToggleMenu = () => {
+   const toggleMenu = () => {
     setMenu(!menu)
    }
     return (
-      <MenuHamburguesa.Provider value={{ menu, ToggleMenu}} >
+      <MenuBurguer.Provider value={{ menu, toggleMenu}} >
         {children}
-        </MenuHamburguesa.Provider>
+        </MenuBurguer.Provider>
   )
 }
-export default HamburguesaMenu;
+export default BurguerMenu;
