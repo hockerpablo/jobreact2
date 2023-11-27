@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContentContainerStyled, LayoutContainerStyled } from './styles'
-import { Navbar } from '../../components/navbar/navbar'
+import { Navbar } from '../../components/navbar/Navbar.1'
 import { Footer } from '../../components/footer/footer'
 
 

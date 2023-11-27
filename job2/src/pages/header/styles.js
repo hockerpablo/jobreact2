@@ -32,5 +32,15 @@ border:none;
     img{
         width: 400px;
     }
+    @media (max-width: 320px)
+{
+    h1,h2{
+        font-size: 35px;
+    }
+    img{
+        position: relative;
+        right: 2rem;
+    }
+}
 }
 ` 

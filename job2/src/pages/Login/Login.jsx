@@ -46,7 +46,7 @@ import logo from '../../../public/Login.png'
                />
                
                <textarea
-                cols={50}
+                cols={30}
                 rows={10}
                 placeholder="deje su mensaje"
                />

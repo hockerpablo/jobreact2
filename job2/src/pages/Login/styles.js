@@ -17,11 +17,20 @@ width: 100%;
     border-radius: 25px;
     outline: none;
     text-align: center;   
+}
+@media (max-width: 468px)
+{
+    width: 400px;
+}
+@media (max-width: 320px)
+{
+   position: relative;
+   left: 0;
 }`
 
 export const Button = styled.button`
-background-color: var();
-color: var();
+background-color: var(--redapple);
+color: var(--white-bg);
 border: none;
 border-radius: 20px;
 padding: 15px 25px;
@@ -33,6 +42,7 @@ export const LoginContainer = styled.div`
 
 position: relative;
 left: -6rem;
+top: -6rem;
 max-width:300px;
 margin: 0 auto;
 height: calc(100vh - 120px);
@@ -43,6 +53,37 @@ img{
   position: relative;
   top: 50px;
   z-index: 3;
+}
+@media (max-width: 966px)
+{
+    position: relative;
+    top: -9rem;
+}
+@media (max-width: 468px)
+{
+    img{
+      width: 400px;
+      position: relative;
+      left: 4rem;
+    }
+}
+@media (max-width: 586px)
+{
+    position: relative;
+    left: -5rem;
+}
+@media (max-width: 320px)
+{
+
+  position: relative;
+  left: -8px;
+  top: 4rem;
+   img{
+    width: 300px;
+    position: relative;
+    left: 0;
+    top: 0;
+   }
 }
 `
 
@@ -66,6 +107,11 @@ export const Card = styled.div`
     font-weight: 800;
     font-size: 1.2rem;
   }
+  @media (max-width: 320px)
+{
+    width: 300px;
+   
+}
 `
 
 

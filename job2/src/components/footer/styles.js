@@ -13,4 +13,11 @@ position: relative;
 bottom: 0;
 img{
     width: 60px;
+}
+@media (max-width: 320px)
+{
+    h2{
+        font-size: 15px;
+    }
+   
 }`
