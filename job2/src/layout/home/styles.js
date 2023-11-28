@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const LayoutContainerStyled  = styled.div `
-background-image: url('../../../src/background2.png');
+background-image: url('https://i.imgur.com/6uZBxWf.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
 
