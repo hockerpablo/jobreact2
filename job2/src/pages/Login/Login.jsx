@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginForm, LoginContainer, Card, Button } from './styles';
 import  AuthContext from '../../context/AuthContext';
-import logo from '../../../public/Login.png'
+import logo from '../../../src/Login.png'
 
 
  export const Login = () => {
